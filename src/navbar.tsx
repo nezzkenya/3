@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Themecontext } from "./context/ThemeContext";
+import { ThemeContext } from "./context/ThemeContext";
 import { IoMdSunny } from "react-icons/io";
 import { FaRegMoon } from "react-icons/fa";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -35,7 +35,7 @@ function Navbar() {
   }
 
   const [open, setOpen] = useState(false);
-  const { theme, setTheme } = useContext(Themecontext);
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div className="flex justify-between items-centre mb-6">
       <div className="flex gap-4 items-center justify-center ">
